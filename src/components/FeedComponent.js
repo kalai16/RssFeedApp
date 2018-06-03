@@ -15,9 +15,11 @@ class FeedComponent extends Component {
     getFeed(){
         const {feed} = this.props
         return feedData = feed.receivedFeed.map((rssFeed, key) => {
-            return <Text key={key}>{rssFeed.channel.item.title}</Text>
+            return <Text key={key}>{rssFeed.rss}</Text>
         })
+        console.log(getFeed)
     }
+    
     
 
     render() {
